@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{site.description}}"
+  </head>
+
+  <body>
+    <ul class="menu">
+      <li>
+        <a class="{% if page.key == 'home' %}is-active{% endif %}" href="/home.html">
+          Start
+        </a>
+      </li>
+      <li>
+        <a class="{% if page.key == 'akademie' %}is-active{% endif %}" href="/akademie.html">Akademie</a>
+      </li>
+      <li>
+        <a class="{% if page.key == 'lehrveranstaltungen' %}is-active{% endif %}" href=""><strong>Lehr</strong>veranstaltungen</a>
+      </li>
+      <li>
+        <a class="{% if page.key == 'leerveranstaltungen' %}is-active{% endif %}" href=""><strong>Leer</strong>veranstaltungen</a>
+      </li>
+      <li>
+        <a class="{% if page.key == 'organisation' %}is-active{% endif %}" href="">Organisation</a>
+      </li>
+      <li>
+        <a class="{% if page.key == 'person' %}is-active{% endif %}" href="">Person</a>
+      </li>
+      <li>
+        <a class="{% if page.key == 'termine' %}is-active{% endif %}" href="">Termine</a>
+      </li>
+    </ul>
+    {{ content }}
+  </body>
+</html>

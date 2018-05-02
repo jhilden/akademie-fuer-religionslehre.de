@@ -1,0 +1,10 @@
+encoding: "utf-8"
+exclude: ['Gemfile', 'Gemfile.lock']
+title: Akademie für Religionslehre
+email: info@akademie-fuer-religionslehre.de
+description: Akademie für Religionslehre - Zentrum für nicht bekenntnisgebundene Theologie in Senden bei Münster
+url: "http://www.akademie-fuer-religionslehre.de"
+defaults:
+  -
+    values:
+      layout: 'default'
