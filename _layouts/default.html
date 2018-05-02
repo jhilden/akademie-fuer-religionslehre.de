@@ -10,29 +10,49 @@
   <body>
     <ul class="menu">
       <li>
-        <a class="{% if page.key == 'home' %}is-active{% endif %}" href="/home.html">
+        <a class="{% if page.key == 'index' %}is-active{% endif %}" href="/index.html">
           Start
         </a>
       </li>
       <li>
-        <a class="{% if page.key == 'akademie' %}is-active{% endif %}" href="/akademie.html">Akademie</a>
+        <a class="{% if page.key == 'akademie' %}is-active{% endif %}" href="/akademie.html">
+          Akademie
+        </a>
       </li>
       <li>
-        <a class="{% if page.key == 'lehrveranstaltungen' %}is-active{% endif %}" href=""><strong>Lehr</strong>veranstaltungen</a>
+        <a class="{% if page.key == 'lehrveranstaltungen' %}is-active{% endif %}" href="/lehrveranstaltungen.html">
+          <strong>Lehr</strong>veranstaltungen
+        </a>
       </li>
       <li>
-        <a class="{% if page.key == 'leerveranstaltungen' %}is-active{% endif %}" href=""><strong>Leer</strong>veranstaltungen</a>
+        <a class="{% if page.key == 'leerveranstaltungen' %}is-active{% endif %}" href="/leerveranstaltungen">
+          <strong>Leer</strong>veranstaltungen
+        </a>
       </li>
       <li>
-        <a class="{% if page.key == 'organisation' %}is-active{% endif %}" href="">Organisation</a>
+        <a class="{% if page.key == 'organisation' %}is-active{% endif %}" href="/organisation.html">
+          Organisation
+        </a>
       </li>
       <li>
-        <a class="{% if page.key == 'person' %}is-active{% endif %}" href="">Person</a>
+        <a class="{% if page.key == 'person' %}is-active{% endif %}" href="/person.html">
+          Person
+        </a>
       </li>
       <li>
-        <a class="{% if page.key == 'termine' %}is-active{% endif %}" href="">Termine</a>
+        <a class="{% if page.key == 'termine' %}is-active{% endif %}" href="/termine.html">
+          Termine
+        </a>
       </li>
     </ul>
+
     {{ content }}
+
+    <div class="box footer">
+      <div style="text-align: center">
+        Schürbusch 7, 48308 Senden-Bösensell, Tel 02536/6362<br />
+        <a href="/">www.akademie-fuer-religionslehre.de</a>, email: <a href="mailto:{{site.email}}">{{site.email}}</a>
+      </div>
+    </div>
   </body>
 </html>

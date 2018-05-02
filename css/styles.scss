@@ -2,7 +2,11 @@
 ---
 
 $white-transparent: rgba(255, 255, 255, .9);
-$border-color: gray;
+$beige: #eeeeec;
+$brown: #ac9d8a;
+
+
+$border-color: $brown;
 $border-radius: 5px;
 
 $dark-text-color: black;
@@ -15,6 +19,7 @@ $content-width: 800px;
 
 body {
   font-family: Helvetica,Arial,sans-serif;
+  background-color: $beige;
 }
 
 @media screen and (min-width: 1176px) {
@@ -46,13 +51,14 @@ a {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  max-width: $content-width - 100px;
+  max-width: 95%;
 }
 
 .menu {
   margin-right: auto;
   margin-left: auto;
-  background: $white-transparent;
+  margin-bottom: 30px;
+  background-color: $white-transparent;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   max-width: $content-width;
@@ -64,9 +70,11 @@ a {
       padding: 10px 15px;
       font-size: 18px;
       text-decoration: none;
+      outline: 0;
 
       &.is-active {
         text-decoration: underline;
+        background-color: $beige;
       }
     }
   }
@@ -74,5 +82,11 @@ a {
 
 h1 {
   font-family: sans-serif;
-  text-align: center
+  text-align: center;
+}
+
+.youtube {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
